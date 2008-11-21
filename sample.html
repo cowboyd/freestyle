@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:fs="www.thefrontside.net/freestyle.dtd">
+<head>
+	<title>Freestyle Example</title>
+	<script type="text/javascript" src="freestyle.js"></script>
+	<script type="text/javascript">
+		function main() {
+			freestyle('template')
+		}
+	</script>
+</head>
+<body>
+<div id='template'><span fs:var="title">Hello World</span>
+	<fs:for each="item" in="items">
+		<div fs:var="item"><span fs:var="message">Hello World</span></div>
+	</fs:for>
+</div>
+</body>
+</html>
